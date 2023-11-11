@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(8, 8, 8);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+#headerButton {
+    display: none;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 240, 75);
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+nav {
+    display: none;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p {
+    color: grey;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3, h1 {
+    font-family: 'Prata', serif;
+    font-weight: 200;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    width: 100%;
+}
+
+.website-image {
+    width: 100%;
+}
+
+.co-founder {
+    background-color: rgb(40,43,51);
+    display: flex;
+    gap: 60px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40,43,51);
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 425px){
+    .section {
+        padding: 20px 30px 20px 30px;
+    }
+    
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        justify-items: center;
+    }
+
+    .logo {
+        width: 75%;
+    }
+
+    .websites-container, .websites-wrapper, .co-founder, .p-founder, .contact, .heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .websites-wrapper {
+        gap: 40px;
+    }
+    
+    .websites-container {
+        gap: 10px;
+    }
+
+    .p-founder {
+        gap: 30px;
+    }
+
+    .contact {
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    .heading {
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .section {
+        padding: 40px;
+    }
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        justify-items: center;
+    }
+    .heading-text {
+        font-size: 19px;
+    }
+
+    .websites-container, .websites-wrapper, .co-founder, .p-founder, .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .websites-wrapper {
+        gap: 40px;
+    }
+    
+    .websites-container {
+        gap: 10px;
+    }
+
+    .p-founder {
+        gap: 30px;
+    }
+
+    .contact {
+        gap: 10px;
+        font-size: 24px;
+    }
+
+    header {
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    #headerButton {
+        display: block;
+    }
+    
+    nav {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .heading {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .section {
+        padding: 50px 75px 50px 75px;
+    }
+
+    .heading-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 21px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+
+    .websites-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+    }
+
+    .websites-wrapper {
+        width: 100%;
+        display: flex;
+        gap: 60px;
+        justify-content: space-evenly;
+    }
+    
+    .p-founder {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .contact {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .p-contact {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:1441px) {
+    .logo {
+        width: 200px;
+    }
+
+    .heading-text {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    button {
+        width: 200px;
+        height: 75px;
+    }
+}
